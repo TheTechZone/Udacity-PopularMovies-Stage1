@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.techz.popularmovies_stage1.MovieDetailsFragment"
+    tools:showIn="@layout/activity_movie_details">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_medium">
+
+        <TextView
+            android:id="@+id/movie_details_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/icons"
+            android:textSize="@dimen/material_text_title" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primary_light"
+            app:columnCount="2">
+
+            <ImageView
+                android:id="@+id/movie_details_poster"
+                android:layout_width="169dp"
+                android:layout_height="225dp"
+                android:scaleType="fitXY"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="left"
+                app:layout_rowSpan="3" />
+
+            <TextView
+                android:id="@+id/movie_details_release_date"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/icons"
+                android:textSize="@dimen/material_text_body1"
+                app:layout_columnSpan="1"
+                app:layout_columnWeight="1"
+                app:layout_gravity="left"
+                app:layout_rowWeight="1"
+                tools:text="@string/release_date_text" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                app:layout_columnSpan="1"
+                app:layout_gravity="left"
+                app:layout_rowWeight="1">
+
+                <TextView
+                    android:id="@+id/movie_details_user_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/rating_text"
+                    android:textColor="@color/icons"
+                    android:textSize="@dimen/material_text_body1" />
+            </LinearLayout>
+
+        </android.support.v7.widget.GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/synopsis"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/material_text_subhead" />
+
+        <TextView
+            android:id="@+id/movie_details_synopsis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_medium"
+            android:paddingRight="@dimen/padding_medium"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/material_text_body1" />
+    </LinearLayout>
+</LinearLayout>
