@@ -7,3 +7,8 @@ file
 ```
 TheMovieDBApiToken="YOUR_API_KEY_HERE"
 ```
+##Sources used in the creation of this app
+https://developer.android.com/index.html
+https://guides.codepath.com/android/Using-OkHttp
+http://stackoverflow.com/
+https://codentrick.com/recyclerview-example-part-3-android-recyclerview-onclicklistener/
