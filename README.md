@@ -12,3 +12,4 @@ https://developer.android.com/index.html
 https://guides.codepath.com/android/Using-OkHttp
 http://stackoverflow.com/
 https://codentrick.com/recyclerview-example-part-3-android-recyclerview-onclicklistener/
+https://www.youtube.com/watch?v=SPVxVl7nkcc
